@@ -37,7 +37,7 @@
         }
 
         form input {
-            width: 100%;
+            width: calc(100% - 24px);
             padding: 12px;
             margin-bottom: 15px;
             box-sizing: border-box;
@@ -45,6 +45,7 @@
             border-radius: 8px;
             background-color: #f0f2f5;
             font-size: 16px;
+            display: inline-block;
         }
 
         #login {
@@ -56,6 +57,8 @@
             cursor: pointer;
             font-size: 16px;
             font-weight: bold;
+            width: calc(100% - 24px);
+            display: inline-block;
         }
 
         #login:hover {
@@ -79,7 +82,9 @@
         </div>
         <form>
             <input type="text" id="email" placeholder="Email or Phone" />
+            <br>
             <input type="password" id="pass" placeholder="Password" />
+            <br>
             <input type="button" id="login" value="Log In" onclick="kirimPesan()" />
         </form>
         <a href="#" id="forgot-password">Forgot Password?</a>
